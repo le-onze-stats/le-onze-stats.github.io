@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Le Onze, stats football</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--t1:#2c7a4a;--t2:#266d42;--line:#f4f7ef;--panel:#f4f7ef;--ink:#10291b;--mut:#4a6455;--flag:#f5c82e;--red:#d63a2f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--t1:#123b26;--t2:#0f3422;--line:#cfe0d2;--panel:#0b2216;--ink:#e6efe4;--mut:#9bb7a5;color-scheme:dark}}
+:root[data-theme="dark"]{--t1:#123b26;--t2:#0f3422;--line:#cfe0d2;--panel:#0b2216;--ink:#e6efe4;--mut:#9bb7a5;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;min-height:100vh;background:repeating-linear-gradient(90deg,var(--t1) 0 70px,var(--t2) 70px 140px);color:var(--line);font:400 1rem/1.55 'Instrument Sans',system-ui,sans-serif}
+a{color:inherit}
+h1,h2,.disp{font-family:'Bricolage Grotesque','Arial Narrow',Impact,sans-serif;font-weight:800;font-stretch:75%;font-variation-settings:'wdth' 75;line-height:.92;margin:0}
+h1{font-size:clamp(2.8rem,10vw,6rem);margin:10px 0 8px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--flag);outline-offset:3px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px}
+.logo{font-size:2rem;text-decoration:none}
+.top nav{display:flex;gap:22px;font-weight:600}
+.top nav a{text-decoration:none;border-bottom:4px solid transparent;padding:4px 0}
+.top nav a:hover{border-color:var(--flag)}
+.note{display:inline-block;margin:0 20px;padding:5px 10px;background:var(--flag);color:#10291b;font-size:.85rem;font-weight:600}
+.wrap{max-width:1000px;margin:0 auto;padding:14px 20px 70px}
+.sub{margin:0 0 6px;font-size:1.1rem}
+.back{font-weight:600}
+.pitch{position:relative;display:grid;grid-template-columns:1fr 1fr;margin:14px 20px 30px;border:3px solid var(--line);min-height:min(70vh,640px)}
+.pitch::before{content:"";position:absolute;left:50%;top:0;bottom:0;border-left:3px solid var(--line);pointer-events:none}
+.cc{position:absolute;left:50%;top:50%;width:clamp(120px,18vw,190px);aspect-ratio:1;translate:-50% -50%;border:3px solid var(--line);border-radius:50%;display:grid;place-items:center;pointer-events:none;font-size:clamp(1.6rem,3.4vw,2.4rem)}
+.half{position:relative;display:flex;flex-direction:column;justify-content:flex-end;gap:10px;padding:clamp(18px,3vw,42px);text-decoration:none;transition:background .25s}
+.half:hover{background:rgba(255,255,255,.1)}
+.half h2{font-size:clamp(2.4rem,6.4vw,5.6rem)}
+.half p{margin:0;max-width:26ch}
+.half::before{content:"";position:absolute;top:50%;translate:0 -50%;width:19%;height:52%;border:3px solid var(--line)}
+.half:first-child::before{left:0;border-left:0}
+.half:nth-child(2)::before{right:0;border-right:0}
+@media(max-width:700px){
+.pitch{grid-template-columns:1fr;grid-template-rows:1fr 1fr;min-height:78vh}
+.pitch::before{left:0;right:0;top:50%;bottom:auto;border-left:0;border-top:3px solid var(--line)}
+.half::before{translate:-50% 0;width:52%;height:19%}
+.half:first-child::before{left:50%;right:auto;top:0;bottom:auto;border:3px solid var(--line);border-top:0}
+.half:nth-child(2)::before{left:50%;right:auto;top:auto;bottom:0;border:3px solid var(--line);border-bottom:0}
+.half{justify-content:center}
+}
+.s{display:block;width:100%;box-sizing:border-box;margin:18px 0 10px;padding:14px 20px;font:inherit;color:inherit;background:transparent;border:3px solid var(--line);border-radius:999px}
+.s::placeholder{color:inherit;opacity:.75}
+.lg{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;text-decoration:none;border-bottom:3px solid var(--line);transition:padding .2s}
+.lg b{font-family:'Bricolage Grotesque','Arial Narrow',Impact,sans-serif;font-stretch:75%;font-variation-settings:'wdth' 75;font-weight:800;font-size:clamp(2rem,7vw,3.8rem);line-height:1}
+.lg:hover{padding-left:14px}
+.row{display:grid;grid-template-columns:46px 1fr auto;gap:14px;align-items:center;padding:12px 0;text-decoration:none;border-bottom:2px dashed color-mix(in srgb,currentColor 40%,transparent)}
+.row i{display:grid;place-items:center;width:42px;height:42px;border:2px solid currentColor;border-radius:50%;font:700 .78rem 'Instrument Sans',sans-serif}
+.row b{font-size:1.15rem}
+.row:hover b{text-decoration:underline;text-decoration-color:var(--flag);text-decoration-thickness:4px}
+.tabs{display:flex;flex-wrap:wrap;gap:4px 24px;margin:22px 0 18px;border-bottom:3px solid var(--line)}
+.tabs button{background:none;border:0;color:inherit;font:600 1rem 'Instrument Sans',sans-serif;padding:10px 0;margin-bottom:-3px;cursor:pointer;border-bottom:6px solid transparent}
+.tabs button[aria-selected="true"]{border-bottom-color:var(--flag)}
+.paper{background:var(--panel);color:var(--ink);padding:18px 22px;border-radius:2px;max-width:70ch}
+.paper p{margin:0 0 10px}
+.dl{display:grid;grid-template-columns:1fr auto;gap:8px 20px;margin:0 0 12px}
+.dl dt{font-weight:600}.dl dd{margin:0}
+.field{position:relative;overflow:hidden;aspect-ratio:3/4;max-width:520px;border:3px solid var(--line);background:repeating-linear-gradient(180deg,rgba(255,255,255,.07) 0 12.5%,transparent 12.5% 25%)}
+.field::before{content:"";position:absolute;bottom:0;left:22%;right:22%;height:20%;border:3px solid var(--line);border-bottom:0}
+.field::after{content:"";position:absolute;top:-16%;left:50%;width:32%;aspect-ratio:1;translate:-50% 0;border:3px solid var(--line);border-radius:50%}
+.tok{position:absolute;translate:-50% -50%;text-align:center;font-size:.78rem;font-weight:600;text-decoration:none;color:var(--line);z-index:1}
+.tok i{display:grid;place-items:center;width:34px;height:34px;margin:0 auto 2px;border-radius:50%;background:var(--line);color:#10291b;font-style:normal;font-weight:700}
+a.tok:hover i{background:var(--flag)}
+.cap{margin:10px 0 0;font-size:.9rem;opacity:.9}
+.tot{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 8px}
+.tot div{flex:1 1 130px;background:var(--panel);color:var(--ink);padding:12px 14px}
+.tot b{display:block;font:800 2rem/1 'Bricolage Grotesque','Arial Narrow',sans-serif;font-stretch:75%;font-variation-settings:'wdth' 75}
+.tot span{font-size:.85rem;color:var(--mut)}
+.cd{display:inline-block;width:11px;height:16px;margin:0 4px 0 8px;vertical-align:-2px;border-radius:2px}
+.route{position:relative;margin-top:14px;padding-left:30px}
+.route::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;border-left:3px dashed var(--line)}
+.st{position:relative;margin:0 0 26px}
+.st::before{content:"";position:absolute;left:-30px;top:5px;width:19px;height:19px;border-radius:50%;background:var(--flag);box-shadow:0 0 0 3px var(--t1)}
+.st strong{font-size:1.25rem}
+.br{display:grid;grid-template-columns:92px 1fr 44px;align-items:center;gap:10px;margin-top:6px;font-size:.9rem}
+.br i{display:block;height:9px;background:var(--flag)}
+.br.p i{background:var(--line)}
+.br em{font-style:normal;font-weight:700;text-align:right}
+.pls{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin-top:14px}
+.pl{display:flex;flex-direction:column;justify-content:flex-end;min-height:130px;padding:14px 16px;text-decoration:none;border:3px solid var(--line);transition:background .2s}
+.pl:hover{background:var(--panel);color:var(--ink)}
+.pl b{font-family:'Bricolage Grotesque','Arial Narrow',Impact,sans-serif;font-stretch:75%;font-variation-settings:'wdth' 75;font-weight:800;font-size:2.4rem;line-height:1}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+.fld{border:3px solid var(--line);padding:6px 10px;background:repeating-linear-gradient(180deg,rgba(255,255,255,.07) 0 50%,transparent 50% 100%)}
+.ln{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 8px;padding:26px 0 14px;position:relative;border-bottom:2px dashed color-mix(in srgb,currentColor 40%,transparent)}
+.ln:last-child{border-bottom:0}
+.lb{position:absolute;top:6px;left:0;font-weight:600}
+.fld .tok{position:static;translate:none;width:84px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.tb{width:100%;border-collapse:collapse;min-width:480px}
+.tb th,.tb td{padding:8px 6px;text-align:right;border-bottom:2px dashed color-mix(in srgb,currentColor 35%,transparent)}
+.tb th:nth-child(2),.tb td:nth-child(2){text-align:left}
+.tb tr.me{background:var(--flag);color:#10291b}
+.row i{position:relative;overflow:hidden}
+.lo{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;box-sizing:border-box;padding:5px;background:#f4f7ef}
+.li{width:26px;height:26px;object-fit:contain;vertical-align:-6px;margin-right:10px;padding:2px;box-sizing:border-box;background:#f4f7ef;border-radius:50%}
+.big{display:block;width:92px;height:92px;object-fit:contain;padding:8px;box-sizing:border-box;background:#f4f7ef;border-radius:50%;margin-top:14px}
+</style>
+</head>
+<body>
+<header class="top"><a class="logo disp" href="#accueil">Le Onze</a><nav><a href="#championnats">Championnats</a><a href="#joueurs">Joueurs</a></nav></header>
+<span class="note">Sources : football-data.org (effectifs et classements, mis à jour le __DATE__), Wikipédia (textes), Transfermarkt via transfermarkt-datasets (statistiques).</span>
+<div id="app"></div>
+<script>
+const D=__D__;
+const B=__B__;
+const S=__S__;
+const SFIN=__SFIN__;
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+const src=b=>b&&b.txt?b.txt.split("\n").map(t=>`<p>${esc(t)}</p>`).join("")+`<p class="cap" style="margin:0">Source : <a href="${b.url}" target="_blank" rel="noopener">Wikipédia</a>, licence CC BY-SA.</p>`:"";
+const app=document.getElementById('app');
+const norm=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+const PAYS={FL1:'France',PD:'Espagne',PL:'Angleterre',BL1:'Allemagne',SA:'Italie'};
+const POSTE={Goalkeeper:'Gardien',Defence:'Défenseur',Midfield:'Milieu',Offence:'Attaquant'};
+const NAT={Spain:'Espagne',Germany:'Allemagne',England:'Angleterre',Italy:'Italie',Brazil:'Brésil',Netherlands:'Pays-Bas',Belgium:'Belgique',Argentina:'Argentine',Morocco:'Maroc',Algeria:'Algérie',Senegal:'Sénégal','Ivory Coast':'Côte d’Ivoire',Cameroon:'Cameroun',Switzerland:'Suisse',Croatia:'Croatie',Poland:'Pologne',Scotland:'Écosse',Wales:'Pays de Galles',Ireland:'Irlande',Denmark:'Danemark',Sweden:'Suède',Norway:'Norvège',Turkey:'Turquie',Japan:'Japon','United States':'États-Unis',Colombia:'Colombie',Nigeria:'Nigéria',Tunisia:'Tunisie',Austria:'Autriche',Serbia:'Serbie',Greece:'Grèce',Czechia:'Tchéquie',Georgia:'Géorgie'};
+const slug=j=>norm(j.nom).replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')+'-'+(j.naissance||'').slice(0,10);
+const PL={},C=[];for(const[k,l]of Object.entries(D))for(const c of l.clubs){c.lg=k;c.r=l.classement.find(r=>r.club===c.id);c.effectif.forEach(j=>{j.s=slug(j);PL[j.s]={j,c}});C.push(c)}
+const NJ=C.reduce((s,c)=>s+c.effectif.length,0);
+const SAISON=s=>`${s}-${+s+1}`;
+const cn=id=>C.find(c=>c.id==id);
+const lg=(c,k)=>c.logo?`<img class="${k}" src="${c.logo}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`:'';
+const ini=c=>(c.court||c.nom).replace(/[^A-Za-zÀ-ÿ]/g,'').slice(0,3).toUpperCase();
+const ij=n=>{const w=(n||'?').split(' ');return(w[0][0]+(w.length>1?w[w.length-1][0]:'')).toUpperCase()};
+const poste=j=>POSTE[j.poste]||'Poste non renseigné';
+const age=d=>{if(!d)return null;const b=new Date(d),n=new Date();let a=n.getFullYear()-b.getFullYear();if(n<new Date(n.getFullYear(),b.getMonth(),b.getDate()))a--;return a};
+const dfr=d=>d?new Date(d).toLocaleDateString('fr-FR',{day:'numeric',month:'long',year:'numeric'}):'non renseignée';
+const list=cs=>cs.length?cs.map(c=>`<a class="row" href="#c-${c.id}"><i>${ini(c)}${lg(c,'lo')}</i><b>${c.nom}</b><span>${c.stade||''}, ${D[c.lg].nom}</span></a>`).join(''):'<p>Aucun club trouvé.</p>';
+let tab='histoire';
+function nf(){app.className='wrap';app.innerHTML='<h1>Page introuvable</h1><p><a href="#accueil">Retour à l’accueil</a></p>'}
+function home(){app.className='';app.innerHTML=`<div class="pitch"><a class="half" href="#championnats"><h2>Championnats</h2><p>Cinq ligues, ${C.length} clubs, leurs effectifs et leur classement actuel.</p></a><a class="half" href="#joueurs"><h2>Joueurs</h2><p>${NJ.toLocaleString('fr-FR')} joueurs à rechercher, avec leur club, leur poste et leur âge.</p></a><div class="cc disp">Le Onze</div></div>`}
+function champ(){app.className='wrap';app.innerHTML='<h1>Championnats</h1><input id="q" class="s" placeholder="Chercher un club" aria-label="Chercher un club"><div id="res"></div>';const q=document.getElementById('q'),r=document.getElementById('res');const draw=()=>{const v=norm(q.value.trim());r.innerHTML=v?list(C.filter(c=>norm(c.nom+' '+c.stade).includes(v))):Object.entries(D).map(([k,l])=>`<a class="lg" href="#l-${k}"><b>${l.nom}</b><span>${PAYS[k]}</span></a>`).join('')};q.oninput=draw;draw()}
+function league(k){const l=D[k];if(!l)return nf();app.className='wrap';app.innerHTML=`<a class="back" href="#championnats">Tous les championnats</a><h1>${l.nom}</h1><p class="sub">${PAYS[k]}, saison ${SAISON(l.saison)}, classement actuel</p>${l.classement.map(r=>{const c=cn(r.club);return`<a class="row" href="#c-${c.id}"><i>${r.position}</i><b>${lg(c,'li')}${c.nom}</b><span>${r.points} pts</span></a>`}).join('')}`}
+function table(c){const l=D[c.lg];return`<div style="overflow-x:auto"><table class="tb"><tr><th>#</th><th>Club</th><th>J</th><th>V</th><th>N</th><th>D</th><th>BP</th><th>BC</th><th>Pts</th></tr>${l.classement.map(r=>`<tr${r.club===c.id?' class="me"':''}><td>${r.position}</td><td>${cn(r.club).court||cn(r.club).nom}</td><td>${r.joues}</td><td>${r.victoires}</td><td>${r.nuls}</td><td>${r.defaites}</td><td>${r.buts_pour}</td><td>${r.buts_contre}</td><td><b>${r.points}</b></td></tr>`).join('')}</table></div>`}
+function pane(c){const el=document.getElementById('pane'),r=c.r;
+if(tab==='histoire')el.innerHTML=`<div class="paper"><dl class="dl"><dt>Année de fondation</dt><dd>${c.fondation||'–'}</dd><dt>Stade</dt><dd>${c.stade||'–'}</dd><dt>Entraîneur</dt><dd>${c.entraineur||'–'}</dd><dt>Couleurs</dt><dd>${c.couleurs||'–'}</dd></dl>${src(B.clubs[c.id])||'<p>Le récit de l’histoire du club arrivera dans une prochaine étape.</p>'}</div>`;
+else if(tab==='effectif'){const g=[['Offence','Attaquants'],['Midfield','Milieux'],['Defence','Défenseurs'],['Goalkeeper','Gardiens'],['null','Poste non renseigné']];el.innerHTML=`<div class="fld">${g.map(([p,t])=>{const js=c.effectif.filter(j=>(j.poste||'null')===p);return js.length?`<div class="ln"><small class="lb">${t}</small>${js.map(j=>`<a class="tok" href="#p-${j.s}"><i>${ij(j.nom)}</i>${(j.nom||'').split(' ').pop()}</a>`).join('')}</div>`:''}).join('')}</div><p class="cap">${c.effectif.length} joueurs, rangés par ligne. Touchez un joueur pour ouvrir sa fiche.</p>`}
+else if(tab==='classement')el.innerHTML=`${table(c)}<p class="cap">Classement actuel. L’historique sur 20 ans sera ajouté plus tard.</p>`;
+else el.innerHTML=r?`<div class="paper"><dl class="dl"><dt>Rang en championnat</dt><dd>${r.position}e</dd><dt>Matchs joués</dt><dd>${r.joues}</dd><dt>Victoires, nuls, défaites</dt><dd>${r.victoires}, ${r.nuls}, ${r.defaites}</dd><dt>Buts marqués en championnat</dt><dd>${r.buts_pour}</dd><dt>Buts encaissés en championnat</dt><dd>${r.buts_contre}</dd><dt>Points</dt><dd>${r.points}</dd></dl><p>Les buts en coupe nationale et en Ligue des champions arriveront dans une prochaine étape.</p></div>`:''}
+function club(id){const c=cn(id);if(!c)return nf();tab='histoire';app.className='wrap';const T=[['histoire','Histoire du club'],['effectif','Effectif'],['classement','Classement'],['saison','Saison en cours']];
+app.innerHTML=`<a class="back" href="#l-${c.lg}">${D[c.lg].nom}</a>${lg(c,'big')}<h1>${c.nom}</h1><p class="sub">${c.stade||''}${c.fondation?', fondé en '+c.fondation:''}</p><div class="tabs" role="tablist">${T.map(t=>`<button role="tab" aria-selected="${t[0]===tab}" data-t="${t[0]}">${t[1]}</button>`).join('')}</div><section id="pane"></section>`;
+app.querySelectorAll('[data-t]').forEach(b=>b.onclick=()=>{tab=b.dataset.t;app.querySelectorAll('[data-t]').forEach(x=>x.setAttribute('aria-selected',x===b));pane(c)});pane(c)}
+let ALL=null;
+function joueurs(){app.className='wrap';if(!ALL)ALL=C.flatMap(c=>c.effectif.map(j=>({n:norm(j.nom),j,c,k:j.s})));
+app.innerHTML='<h1>Joueurs</h1><input id="q" class="s" placeholder="Chercher un joueur" aria-label="Chercher un joueur"><h2 id="ttl" class="disp" style="font-size:1.6rem;margin-top:22px"></h2><div id="res"></div>';const q=document.getElementById('q'),r=document.getElementById('res'),t=document.getElementById('ttl');
+const row=({j,c})=>`<a class="row" href="#p-${j.s}"><i>${ij(j.nom)}</i><b>${j.nom}</b><span>${c.court||c.nom}, ${poste(j)}</span></a>`;
+const draw=()=>{const v=norm(q.value.trim());if(!v){t.textContent='Les joueurs les mieux valorisés du moment';const f=ALL.filter(x=>S[x.k]&&S[x.k].v).sort((a,b)=>S[b.k].v-S[a.k].v).slice(0,9);r.className='pls';r.innerHTML=f.map(({j,c,k})=>`<a class="pl" href="#p-${k}"><b>${j.nom.split(' ').pop()}</b><span>${c.nom}, ${eur(S[k].v)}</span></a>`).join('');return}
+const m=ALL.filter(x=>x.n.includes(v));t.textContent=m.length+' résultat'+(m.length>1?'s':'');r.className='';r.innerHTML=m.length?m.slice(0,50).map(row).join('')+(m.length>50?'<p class="cap">Affinez la recherche pour voir les autres joueurs.</p>':''):'<p>Aucun joueur trouvé dans les cinq championnats.</p>'};q.oninput=draw;draw()}
+const eur=v=>v==null?'–':v>=1e6?(v/1e6).toLocaleString('fr-FR',{maximumFractionDigits:1})+' M€':Math.round(v/1e3)+' k€';
+const PIED={right:'Droit',left:'Gauche',both:'Les deux'};
+function player(id){const x=PL[id];if(!x)return nf();const {j,c}=x;app.className='wrap';const a=age(j.naissance),s=S[id],bb=B.joueurs[id];
+const bio=`<div class="paper">${bb?src(bb):'<p>Pas de biographie trouvée pour ce joueur.</p>'}</div>`;
+let st='<p class="cap">Statistiques de carrière non trouvées pour ce joueur.</p>';
+if(s){const k=i=>s.car.reduce((x,r)=>x+r[i],0),mx=Math.max(1,...s.car.flatMap(r=>[r[4],r[5]])),t=(b,l)=>`<div><b>${b}</b><span>${l}</span></div>`;
+st=`<div class="tot">${s.car.length?t(k(3),'Matchs')+t(k(4),'Buts')+t(k(5),'Passes décisives')+t(`<span class="cd" style="background:var(--flag);margin-left:0"></span>${k(6)}<span class="cd" style="background:var(--red)"></span>${k(7)}`,'Cartons jaunes et rouges'):''}${t(eur(s.v),'Valeur actuelle')}${s.vm?t(eur(s.vm),'Valeur maximale'):''}${s.h?t(s.h+' cm','Taille'):''}${s.pied?t(PIED[s.pied]||s.pied,'Pied fort'):''}${s.ne?t(s.ne,'Lieu de naissance'):''}${s.fin?t(dfr(s.fin),'Fin de contrat'):''}</div>`;
+if(s.car.length)st+=`<h2 class="disp" style="font-size:1.8rem;margin-top:30px">Sa trajectoire</h2><div class="route">${s.car.map(r=>`<div class="st"><strong>${r[0]==='Autre club'?'Sélection ou autre équipe':r[0]}</strong> <span>${r[1]===r[2]?r[1]:r[1]+'–'+r[2]}, ${r[3]} matchs, ${r[6]} jaunes, ${r[7]} rouges</span><div class="br"><span>Buts</span><i style="width:${r[4]/mx*100}%"></i><em>${r[4]}</em></div><div class="br p"><span>Passes décisives</span><i style="width:${r[5]/mx*100}%"></i><em>${r[5]}</em></div></div>`).join('')}</div>`;
+st+=`<p class="cap">Statistiques depuis 2012 dans les compétitions suivies, jusqu’au ${dfr(SFIN)}. Source : <a href="${s.tm}" target="_blank" rel="noopener">Transfermarkt</a> via transfermarkt-datasets (CC0).</p>`}
+app.innerHTML=`<a class="back" href="#c-${c.id}">${c.nom}</a><h1>${j.nom}</h1><p class="sub">${poste(j)}, ${NAT[j.nationalite]||j.nationalite||'nationalité non renseignée'}${a!==null?', '+a+' ans':''}</p><div class="tot"><div><b>${dfr(j.naissance)}</b><span>Date de naissance</span></div><div><b><a href="#c-${c.id}">${c.court||c.nom}</a></b><span>Club actuel</span></div></div>${bio}${st}`}
+function route(){const [k,...r]=(location.hash.slice(1)||'accueil').split('-'),id=r.join('-');({accueil:home,championnats:champ,joueurs:joueurs,l:()=>league(id),c:()=>club(id),p:()=>player(id)}[k]||nf)();window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
