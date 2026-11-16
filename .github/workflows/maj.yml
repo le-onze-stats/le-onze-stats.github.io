@@ -1,0 +1,35 @@
+name: Mise à jour du site
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  maj:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Classements et effectifs
+        run: python build_data.py
+        env:
+          FOOTBALL_TOKEN: ${{ secrets.FOOTBALL_TOKEN }}
+      - name: Statistiques (chaque lundi)
+        run: |
+          if [ "$(date +%u)" = "1" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            python build_stats.py
+          fi
+      - name: Biographies des nouveaux joueurs
+        run: python build_bios.py
+      - name: Génération du site
+        run: python generate_site.py
+      - name: Publication
+        run: |
+          git config user.name "maj-auto"
+          git config user.email "maj-auto@users.noreply.github.com"
+          git add data public
+          git diff --cached --quiet || git commit -m "Mise à jour automatique"
+          git push
