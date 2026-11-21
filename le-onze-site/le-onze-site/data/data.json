@@ -137,6 +137,17 @@
    },
    {
     "position": 13,
+    "club": 531,
+    "joues": 11,
+    "victoires": 3,
+    "nuls": 2,
+    "defaites": 6,
+    "buts_pour": 10,
+    "buts_contre": 18,
+    "points": 11
+   },
+   {
+    "position": 14,
     "club": 576,
     "joues": 10,
     "victoires": 3,
@@ -147,7 +158,7 @@
     "points": 10
    },
    {
-    "position": 14,
+    "position": 15,
     "club": 519,
     "joues": 10,
     "victoires": 3,
@@ -158,7 +169,7 @@
     "points": 10
    },
    {
-    "position": 15,
+    "position": 16,
     "club": 535,
     "joues": 10,
     "victoires": 1,
@@ -169,7 +180,7 @@
     "points": 8
    },
    {
-    "position": 16,
+    "position": 17,
     "club": 532,
     "joues": 10,
     "victoires": 2,
@@ -180,25 +191,14 @@
     "points": 8
    },
    {
-    "position": 17,
-    "club": 531,
-    "joues": 10,
-    "victoires": 2,
-    "nuls": 2,
-    "defaites": 6,
-    "buts_pour": 7,
-    "buts_contre": 17,
-    "points": 8
-   },
-   {
     "position": 18,
     "club": 533,
-    "joues": 10,
+    "joues": 11,
     "victoires": 0,
     "nuls": 2,
-    "defaites": 8,
-    "buts_pour": 9,
-    "buts_contre": 22,
+    "defaites": 9,
+    "buts_pour": 10,
+    "buts_contre": 25,
     "points": 2
    }
   ],
@@ -2410,6 +2410,12 @@
       "nationalite": "France"
      },
      {
+      "nom": "Bocar Wade",
+      "poste": null,
+      "naissance": "2008-05-22",
+      "nationalite": "France"
+     },
+     {
       "nom": "Hakim Dongopandji",
       "poste": null,
       "naissance": "2007-02-21",
@@ -3392,12 +3398,12 @@
    {
     "position": 7,
     "club": 77,
-    "joues": 11,
+    "joues": 12,
     "victoires": 4,
     "nuls": 4,
-    "defaites": 3,
+    "defaites": 4,
     "buts_pour": 15,
-    "buts_contre": 11,
+    "buts_contre": 12,
     "points": 16
    },
    {
@@ -3424,6 +3430,17 @@
    },
    {
     "position": 10,
+    "club": 80,
+    "joues": 13,
+    "victoires": 4,
+    "nuls": 3,
+    "defaites": 6,
+    "buts_pour": 14,
+    "buts_contre": 14,
+    "points": 15
+   },
+   {
+    "position": 11,
     "club": 5335,
     "joues": 12,
     "victoires": 4,
@@ -3434,7 +3451,7 @@
     "points": 14
    },
    {
-    "position": 11,
+    "position": 12,
     "club": 558,
     "joues": 12,
     "victoires": 2,
@@ -3445,7 +3462,7 @@
     "points": 13
    },
    {
-    "position": 12,
+    "position": 13,
     "club": 263,
     "joues": 12,
     "victoires": 3,
@@ -3454,17 +3471,6 @@
     "buts_pour": 15,
     "buts_contre": 17,
     "points": 13
-   },
-   {
-    "position": 13,
-    "club": 80,
-    "joues": 12,
-    "victoires": 3,
-    "nuls": 3,
-    "defaites": 6,
-    "buts_pour": 13,
-    "buts_contre": 14,
-    "points": 12
    },
    {
     "position": 14,
@@ -4166,6 +4172,12 @@
       "poste": "Offence",
       "naissance": "2003-05-17",
       "nationalite": "Spain"
+     },
+     {
+      "nom": "Makar Kotovshchikov",
+      "poste": null,
+      "naissance": "2008-06-10",
+      "nationalite": "Russia"
      },
      {
       "nom": "Muñeco",
@@ -10670,13 +10682,13 @@
    {
     "position": 1,
     "club": 5,
-    "joues": 9,
+    "joues": 10,
     "victoires": 6,
-    "nuls": 3,
+    "nuls": 4,
     "defaites": 0,
-    "buts_pour": 29,
-    "buts_contre": 9,
-    "points": 21
+    "buts_pour": 30,
+    "buts_contre": 10,
+    "points": 22
    },
    {
     "position": 2,
@@ -10812,6 +10824,17 @@
    },
    {
     "position": 14,
+    "club": 1,
+    "joues": 10,
+    "victoires": 2,
+    "nuls": 4,
+    "defaites": 4,
+    "buts_pour": 11,
+    "buts_contre": 15,
+    "points": 10
+   },
+   {
+    "position": 15,
     "club": 16,
     "joues": 9,
     "victoires": 2,
@@ -10819,17 +10842,6 @@
     "defaites": 4,
     "buts_pour": 20,
     "buts_contre": 20,
-    "points": 9
-   },
-   {
-    "position": 15,
-    "club": 1,
-    "joues": 9,
-    "victoires": 2,
-    "nuls": 3,
-    "defaites": 4,
-    "buts_pour": 10,
-    "buts_contre": 14,
     "points": 9
    },
    {
