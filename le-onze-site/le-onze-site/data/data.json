@@ -16,6 +16,17 @@
    },
    {
     "position": 2,
+    "club": 1045,
+    "joues": 11,
+    "victoires": 7,
+    "nuls": 2,
+    "defaites": 2,
+    "buts_pour": 21,
+    "buts_contre": 10,
+    "points": 23
+   },
+   {
+    "position": 3,
     "club": 521,
     "joues": 11,
     "victoires": 6,
@@ -24,17 +35,6 @@
     "buts_pour": 14,
     "buts_contre": 8,
     "points": 21
-   },
-   {
-    "position": 3,
-    "club": 1045,
-    "joues": 10,
-    "victoires": 6,
-    "nuls": 2,
-    "defaites": 2,
-    "buts_pour": 17,
-    "buts_contre": 10,
-    "points": 20
    },
    {
     "position": 4,
@@ -50,12 +50,12 @@
    {
     "position": 5,
     "club": 516,
-    "joues": 10,
+    "joues": 11,
     "victoires": 6,
     "nuls": 0,
-    "defaites": 4,
-    "buts_pour": 22,
-    "buts_contre": 14,
+    "defaites": 5,
+    "buts_pour": 24,
+    "buts_contre": 17,
     "points": 18
    },
    {
@@ -94,24 +94,24 @@
    {
     "position": 9,
     "club": 529,
-    "joues": 10,
+    "joues": 11,
     "victoires": 5,
-    "nuls": 1,
+    "nuls": 2,
     "defaites": 4,
-    "buts_pour": 21,
-    "buts_contre": 21,
-    "points": 16
+    "buts_pour": 22,
+    "buts_contre": 22,
+    "points": 17
    },
    {
     "position": 10,
     "club": 525,
-    "joues": 10,
+    "joues": 11,
     "victoires": 4,
-    "nuls": 3,
+    "nuls": 4,
     "defaites": 3,
-    "buts_pour": 9,
-    "buts_contre": 8,
-    "points": 15
+    "buts_pour": 10,
+    "buts_contre": 9,
+    "points": 16
    },
    {
     "position": 11,
@@ -137,6 +137,17 @@
    },
    {
     "position": 13,
+    "club": 535,
+    "joues": 11,
+    "victoires": 2,
+    "nuls": 5,
+    "defaites": 4,
+    "buts_pour": 15,
+    "buts_contre": 21,
+    "points": 11
+   },
+   {
+    "position": 14,
     "club": 531,
     "joues": 11,
     "victoires": 3,
@@ -147,7 +158,7 @@
     "points": 11
    },
    {
-    "position": 14,
+    "position": 15,
     "club": 519,
     "joues": 11,
     "victoires": 3,
@@ -158,7 +169,7 @@
     "points": 11
    },
    {
-    "position": 15,
+    "position": 16,
     "club": 576,
     "joues": 11,
     "victoires": 3,
@@ -169,25 +180,14 @@
     "points": 10
    },
    {
-    "position": 16,
-    "club": 535,
-    "joues": 10,
-    "victoires": 1,
-    "nuls": 5,
-    "defaites": 4,
-    "buts_pour": 12,
-    "buts_contre": 19,
-    "points": 8
-   },
-   {
     "position": 17,
     "club": 532,
-    "joues": 10,
+    "joues": 11,
     "victoires": 2,
     "nuls": 2,
-    "defaites": 6,
+    "defaites": 7,
     "buts_pour": 9,
-    "buts_contre": 19,
+    "buts_contre": 23,
     "points": 8
    },
    {
@@ -2246,6 +2246,12 @@
       "poste": "Offence",
       "naissance": "2006-11-05",
       "nationalite": "Cameroon"
+     },
+     {
+      "nom": "Ianis Sacko",
+      "poste": null,
+      "naissance": "2009-07-30",
+      "nationalite": "Mali"
      }
     ]
    },
@@ -3338,13 +3344,13 @@
    {
     "position": 1,
     "club": 81,
-    "joues": 12,
-    "victoires": 11,
+    "joues": 13,
+    "victoires": 12,
     "nuls": 0,
     "defaites": 1,
-    "buts_pour": 48,
-    "buts_contre": 13,
-    "points": 33
+    "buts_pour": 51,
+    "buts_contre": 15,
+    "points": 36
    },
    {
     "position": 2,
@@ -3360,13 +3366,13 @@
    {
     "position": 3,
     "club": 78,
-    "joues": 12,
-    "victoires": 9,
+    "joues": 13,
+    "victoires": 10,
     "nuls": 1,
     "defaites": 2,
-    "buts_pour": 23,
+    "buts_pour": 26,
     "buts_contre": 10,
-    "points": 28
+    "points": 31
    },
    {
     "position": 4,
@@ -3382,12 +3388,12 @@
    {
     "position": 5,
     "club": 92,
-    "joues": 12,
+    "joues": 13,
     "victoires": 7,
     "nuls": 1,
-    "defaites": 4,
-    "buts_pour": 21,
-    "buts_contre": 20,
+    "defaites": 5,
+    "buts_pour": 23,
+    "buts_contre": 23,
     "points": 22
    },
    {
@@ -3403,6 +3409,17 @@
    },
    {
     "position": 7,
+    "club": 5335,
+    "joues": 13,
+    "victoires": 5,
+    "nuls": 2,
+    "defaites": 6,
+    "buts_pour": 20,
+    "buts_contre": 32,
+    "points": 17
+   },
+   {
+    "position": 8,
     "club": 77,
     "joues": 12,
     "victoires": 4,
@@ -3413,7 +3430,7 @@
     "points": 16
    },
    {
-    "position": 8,
+    "position": 9,
     "club": 263,
     "joues": 13,
     "victoires": 4,
@@ -3424,18 +3441,18 @@
     "points": 16
    },
    {
-    "position": 9,
+    "position": 10,
     "club": 94,
-    "joues": 12,
+    "joues": 13,
     "victoires": 4,
     "nuls": 3,
-    "defaites": 5,
-    "buts_pour": 17,
-    "buts_contre": 15,
+    "defaites": 6,
+    "buts_pour": 19,
+    "buts_contre": 18,
     "points": 15
    },
    {
-    "position": 10,
+    "position": 11,
     "club": 80,
     "joues": 13,
     "victoires": 4,
@@ -3446,7 +3463,7 @@
     "points": 15
    },
    {
-    "position": 11,
+    "position": 12,
     "club": 560,
     "joues": 13,
     "victoires": 3,
@@ -3457,18 +3474,18 @@
     "points": 15
    },
    {
-    "position": 12,
-    "club": 5335,
-    "joues": 12,
+    "position": 13,
+    "club": 79,
+    "joues": 13,
     "victoires": 4,
-    "nuls": 2,
+    "nuls": 3,
     "defaites": 6,
-    "buts_pour": 17,
-    "buts_contre": 30,
-    "points": 14
+    "buts_pour": 13,
+    "buts_contre": 23,
+    "points": 15
    },
    {
-    "position": 13,
+    "position": 14,
     "club": 558,
     "joues": 13,
     "victoires": 2,
@@ -3479,7 +3496,7 @@
     "points": 13
    },
    {
-    "position": 14,
+    "position": 15,
     "club": 87,
     "joues": 12,
     "victoires": 3,
@@ -3490,29 +3507,7 @@
     "points": 12
    },
    {
-    "position": 15,
-    "club": 82,
-    "joues": 12,
-    "victoires": 3,
-    "nuls": 3,
-    "defaites": 6,
-    "buts_pour": 8,
-    "buts_contre": 18,
-    "points": 12
-   },
-   {
     "position": 16,
-    "club": 79,
-    "joues": 12,
-    "victoires": 3,
-    "nuls": 3,
-    "defaites": 6,
-    "buts_pour": 12,
-    "buts_contre": 23,
-    "points": 12
-   },
-   {
-    "position": 17,
     "club": 95,
     "joues": 13,
     "victoires": 3,
@@ -3520,6 +3515,17 @@
     "defaites": 7,
     "buts_pour": 9,
     "buts_contre": 20,
+    "points": 12
+   },
+   {
+    "position": 17,
+    "club": 82,
+    "joues": 13,
+    "victoires": 3,
+    "nuls": 3,
+    "defaites": 7,
+    "buts_pour": 8,
+    "buts_contre": 21,
     "points": 12
    },
    {
@@ -3547,12 +3553,12 @@
    {
     "position": 20,
     "club": 84,
-    "joues": 12,
+    "joues": 13,
     "victoires": 0,
     "nuls": 5,
-    "defaites": 7,
+    "defaites": 8,
     "buts_pour": 9,
-    "buts_contre": 23,
+    "buts_contre": 24,
     "points": 5
    }
   ],
@@ -6967,12 +6973,12 @@
    {
     "position": 2,
     "club": 397,
-    "joues": 10,
+    "joues": 11,
     "victoires": 7,
     "nuls": 1,
-    "defaites": 2,
+    "defaites": 3,
     "buts_pour": 26,
-    "buts_contre": 7,
+    "buts_contre": 9,
     "points": 22
    },
    {
@@ -6988,6 +6994,17 @@
    },
    {
     "position": 4,
+    "club": 64,
+    "joues": 11,
+    "victoires": 6,
+    "nuls": 3,
+    "defaites": 2,
+    "buts_pour": 18,
+    "buts_contre": 10,
+    "points": 21
+   },
+   {
+    "position": 5,
     "club": 1044,
     "joues": 11,
     "victoires": 5,
@@ -6995,17 +7012,6 @@
     "defaites": 3,
     "buts_pour": 18,
     "buts_contre": 14,
-    "points": 18
-   },
-   {
-    "position": 5,
-    "club": 64,
-    "joues": 10,
-    "victoires": 5,
-    "nuls": 3,
-    "defaites": 2,
-    "buts_pour": 14,
-    "buts_contre": 10,
     "points": 18
    },
    {
@@ -7065,6 +7071,17 @@
    },
    {
     "position": 11,
+    "club": 322,
+    "joues": 11,
+    "victoires": 3,
+    "nuls": 5,
+    "defaites": 3,
+    "buts_pour": 13,
+    "buts_contre": 11,
+    "points": 14
+   },
+   {
+    "position": 12,
     "club": 58,
     "joues": 11,
     "victoires": 3,
@@ -7075,7 +7092,7 @@
     "points": 14
    },
    {
-    "position": 12,
+    "position": 13,
     "club": 67,
     "joues": 11,
     "victoires": 3,
@@ -7086,7 +7103,7 @@
     "points": 13
    },
    {
-    "position": 13,
+    "position": 14,
     "club": 1076,
     "joues": 11,
     "victoires": 4,
@@ -7095,17 +7112,6 @@
     "buts_pour": 13,
     "buts_contre": 21,
     "points": 12
-   },
-   {
-    "position": 14,
-    "club": 322,
-    "joues": 10,
-    "victoires": 2,
-    "nuls": 5,
-    "defaites": 3,
-    "buts_pour": 11,
-    "buts_contre": 11,
-    "points": 11
    },
    {
     "position": 15,
@@ -7154,12 +7160,12 @@
    {
     "position": 19,
     "club": 66,
-    "joues": 10,
+    "joues": 11,
     "victoires": 1,
     "nuls": 5,
-    "defaites": 4,
+    "defaites": 5,
     "buts_pour": 14,
-    "buts_contre": 19,
+    "buts_contre": 23,
     "points": 8
    },
    {
@@ -10761,13 +10767,13 @@
    {
     "position": 6,
     "club": 12,
-    "joues": 9,
-    "victoires": 4,
+    "joues": 10,
+    "victoires": 5,
     "nuls": 3,
     "defaites": 2,
-    "buts_pour": 17,
+    "buts_pour": 21,
     "buts_contre": 15,
-    "points": 15
+    "points": 18
    },
    {
     "position": 7,
@@ -10804,6 +10810,17 @@
    },
    {
     "position": 10,
+    "club": 16,
+    "joues": 10,
+    "victoires": 3,
+    "nuls": 3,
+    "defaites": 4,
+    "buts_pour": 23,
+    "buts_contre": 21,
+    "points": 12
+   },
+   {
+    "position": 11,
     "club": 2,
     "joues": 10,
     "victoires": 4,
@@ -10814,29 +10831,29 @@
     "points": 12
    },
    {
-    "position": 11,
+    "position": 12,
     "club": 7,
-    "joues": 9,
+    "joues": 10,
     "victoires": 4,
     "nuls": 0,
-    "defaites": 5,
+    "defaites": 6,
     "buts_pour": 10,
-    "buts_contre": 20,
+    "buts_contre": 24,
     "points": 12
    },
    {
-    "position": 12,
+    "position": 13,
     "club": 15,
-    "joues": 9,
+    "joues": 10,
     "victoires": 3,
     "nuls": 1,
-    "defaites": 5,
-    "buts_pour": 18,
-    "buts_contre": 19,
+    "defaites": 6,
+    "buts_pour": 19,
+    "buts_contre": 22,
     "points": 10
    },
    {
-    "position": 13,
+    "position": 14,
     "club": 1,
     "joues": 10,
     "victoires": 2,
@@ -10847,7 +10864,7 @@
     "points": 10
    },
    {
-    "position": 14,
+    "position": 15,
     "club": 29,
     "joues": 10,
     "victoires": 2,
@@ -10856,17 +10873,6 @@
     "buts_pour": 8,
     "buts_contre": 15,
     "points": 10
-   },
-   {
-    "position": 15,
-    "club": 16,
-    "joues": 9,
-    "victoires": 2,
-    "nuls": 3,
-    "defaites": 4,
-    "buts_pour": 20,
-    "buts_contre": 20,
-    "points": 9
    },
    {
     "position": 16,
@@ -14276,16 +14282,27 @@
    {
     "position": 3,
     "club": 108,
-    "joues": 11,
+    "joues": 12,
     "victoires": 9,
-    "nuls": 1,
+    "nuls": 2,
     "defaites": 1,
-    "buts_pour": 28,
-    "buts_contre": 13,
-    "points": 28
+    "buts_pour": 32,
+    "buts_contre": 17,
+    "points": 29
    },
    {
     "position": 4,
+    "club": 98,
+    "joues": 12,
+    "victoires": 8,
+    "nuls": 3,
+    "defaites": 1,
+    "buts_pour": 28,
+    "buts_contre": 14,
+    "points": 27
+   },
+   {
+    "position": 5,
     "club": 7397,
     "joues": 12,
     "victoires": 8,
@@ -14296,29 +14313,29 @@
     "points": 26
    },
    {
-    "position": 5,
-    "club": 98,
-    "joues": 11,
-    "victoires": 7,
-    "nuls": 3,
-    "defaites": 1,
-    "buts_pour": 23,
-    "buts_contre": 13,
-    "points": 24
-   },
-   {
     "position": 6,
-    "club": 470,
-    "joues": 11,
+    "club": 109,
+    "joues": 12,
     "victoires": 6,
-    "nuls": 2,
+    "nuls": 3,
     "defaites": 3,
-    "buts_pour": 24,
-    "buts_contre": 15,
-    "points": 20
+    "buts_pour": 19,
+    "buts_contre": 12,
+    "points": 21
    },
    {
     "position": 7,
+    "club": 470,
+    "joues": 12,
+    "victoires": 6,
+    "nuls": 2,
+    "defaites": 4,
+    "buts_pour": 25,
+    "buts_contre": 20,
+    "points": 20
+   },
+   {
+    "position": 8,
     "club": 113,
     "joues": 12,
     "victoires": 5,
@@ -14329,29 +14346,29 @@
     "points": 18
    },
    {
-    "position": 8,
-    "club": 109,
-    "joues": 11,
+    "position": 9,
+    "club": 103,
+    "joues": 12,
     "victoires": 5,
     "nuls": 3,
-    "defaites": 3,
-    "buts_pour": 15,
-    "buts_contre": 12,
+    "defaites": 4,
+    "buts_pour": 17,
+    "buts_contre": 15,
     "points": 18
    },
    {
-    "position": 9,
-    "club": 103,
-    "joues": 11,
+    "position": 10,
+    "club": 107,
+    "joues": 12,
     "victoires": 5,
-    "nuls": 2,
-    "defaites": 4,
-    "buts_pour": 16,
-    "buts_contre": 14,
-    "points": 17
+    "nuls": 1,
+    "defaites": 6,
+    "buts_pour": 13,
+    "buts_contre": 16,
+    "points": 16
    },
    {
-    "position": 10,
+    "position": 11,
     "club": 104,
     "joues": 12,
     "victoires": 5,
@@ -14362,18 +14379,18 @@
     "points": 16
    },
    {
-    "position": 11,
+    "position": 12,
     "club": 102,
-    "joues": 11,
+    "joues": 12,
     "victoires": 4,
-    "nuls": 2,
+    "nuls": 3,
     "defaites": 5,
-    "buts_pour": 17,
-    "buts_contre": 20,
-    "points": 14
+    "buts_pour": 21,
+    "buts_contre": 24,
+    "points": 15
    },
    {
-    "position": 12,
+    "position": 13,
     "club": 586,
     "joues": 12,
     "victoires": 4,
@@ -14382,17 +14399,6 @@
     "buts_pour": 15,
     "buts_contre": 18,
     "points": 14
-   },
-   {
-    "position": 13,
-    "club": 107,
-    "joues": 11,
-    "victoires": 4,
-    "nuls": 1,
-    "defaites": 6,
-    "buts_pour": 11,
-    "buts_contre": 16,
-    "points": 13
    },
    {
     "position": 14,
@@ -14430,12 +14436,12 @@
    {
     "position": 17,
     "club": 471,
-    "joues": 11,
+    "joues": 12,
     "victoires": 2,
     "nuls": 2,
-    "defaites": 7,
+    "defaites": 8,
     "buts_pour": 16,
-    "buts_contre": 29,
+    "buts_contre": 31,
     "points": 8
    },
    {
@@ -14451,25 +14457,25 @@
    },
    {
     "position": 19,
-    "club": 454,
-    "joues": 11,
-    "victoires": 2,
-    "nuls": 0,
-    "defaites": 9,
-    "buts_pour": 8,
-    "buts_contre": 21,
+    "club": 115,
+    "joues": 12,
+    "victoires": 1,
+    "nuls": 3,
+    "defaites": 8,
+    "buts_pour": 13,
+    "buts_contre": 26,
     "points": 6
    },
    {
     "position": 20,
-    "club": 115,
-    "joues": 11,
-    "victoires": 1,
-    "nuls": 2,
-    "defaites": 8,
-    "buts_pour": 12,
+    "club": 454,
+    "joues": 12,
+    "victoires": 2,
+    "nuls": 0,
+    "defaites": 10,
+    "buts_pour": 8,
     "buts_contre": 25,
-    "points": 5
+    "points": 6
    }
   ],
   "clubs": [
@@ -15334,6 +15340,12 @@
       "poste": "Offence",
       "naissance": "2004-01-16",
       "nationalite": "Belgium"
+     },
+     {
+      "nom": "Kwesi Badori",
+      "poste": null,
+      "naissance": "2008-01-01",
+      "nationalite": "Ghana"
      }
     ]
    },
