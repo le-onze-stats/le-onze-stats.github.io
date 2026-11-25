@@ -2804,6 +2804,12 @@
       "poste": "Offence",
       "naissance": "2003-10-01",
       "nationalite": "Austria"
+     },
+     {
+      "nom": "Léopold Joursky",
+      "poste": null,
+      "naissance": "2008-10-03",
+      "nationalite": "France"
      }
     ]
    },
@@ -3497,6 +3503,17 @@
    },
    {
     "position": 15,
+    "club": 88,
+    "joues": 13,
+    "victoires": 2,
+    "nuls": 6,
+    "defaites": 5,
+    "buts_pour": 17,
+    "buts_contre": 22,
+    "points": 12
+   },
+   {
+    "position": 16,
     "club": 87,
     "joues": 12,
     "victoires": 3,
@@ -3507,7 +3524,7 @@
     "points": 12
    },
    {
-    "position": 16,
+    "position": 17,
     "club": 95,
     "joues": 13,
     "victoires": 3,
@@ -3518,7 +3535,7 @@
     "points": 12
    },
    {
-    "position": 17,
+    "position": 18,
     "club": 82,
     "joues": 13,
     "victoires": 3,
@@ -3529,26 +3546,15 @@
     "points": 12
    },
    {
-    "position": 18,
-    "club": 88,
-    "joues": 12,
-    "victoires": 2,
-    "nuls": 5,
-    "defaites": 5,
-    "buts_pour": 16,
-    "buts_contre": 21,
-    "points": 11
-   },
-   {
     "position": 19,
     "club": 285,
-    "joues": 12,
+    "joues": 13,
     "victoires": 2,
-    "nuls": 4,
+    "nuls": 5,
     "defaites": 6,
-    "buts_pour": 14,
-    "buts_contre": 20,
-    "points": 10
+    "buts_pour": 15,
+    "buts_contre": 21,
+    "points": 11
    },
    {
     "position": 20,
@@ -7016,6 +7022,17 @@
    },
    {
     "position": 6,
+    "club": 402,
+    "joues": 11,
+    "victoires": 4,
+    "nuls": 5,
+    "defaites": 2,
+    "buts_pour": 20,
+    "buts_contre": 11,
+    "points": 17
+   },
+   {
+    "position": 7,
     "club": 341,
     "joues": 11,
     "victoires": 4,
@@ -7024,17 +7041,6 @@
     "buts_pour": 14,
     "buts_contre": 9,
     "points": 17
-   },
-   {
-    "position": 7,
-    "club": 62,
-    "joues": 10,
-    "victoires": 4,
-    "nuls": 4,
-    "defaites": 2,
-    "buts_pour": 12,
-    "buts_contre": 10,
-    "points": 16
    },
    {
     "position": 8,
@@ -7049,6 +7055,17 @@
    },
    {
     "position": 9,
+    "club": 62,
+    "joues": 11,
+    "victoires": 4,
+    "nuls": 4,
+    "defaites": 3,
+    "buts_pour": 12,
+    "buts_contre": 14,
+    "points": 16
+   },
+   {
+    "position": 10,
     "club": 73,
     "joues": 11,
     "victoires": 4,
@@ -7057,17 +7074,6 @@
     "buts_pour": 12,
     "buts_contre": 11,
     "points": 15
-   },
-   {
-    "position": 10,
-    "club": 402,
-    "joues": 10,
-    "victoires": 3,
-    "nuls": 5,
-    "defaites": 2,
-    "buts_pour": 16,
-    "buts_contre": 11,
-    "points": 14
    },
    {
     "position": 11,
@@ -14248,6 +14254,12 @@
       "poste": "Offence",
       "naissance": "2006-09-01",
       "nationalite": "Nigeria"
+     },
+     {
+      "nom": "Toni Langsteiner",
+      "poste": null,
+      "naissance": "2008-08-04",
+      "nationalite": "Germany"
      }
     ]
    }
@@ -14402,6 +14414,17 @@
    },
    {
     "position": 14,
+    "club": 5911,
+    "joues": 12,
+    "victoires": 3,
+    "nuls": 1,
+    "defaites": 8,
+    "buts_pour": 20,
+    "buts_contre": 25,
+    "points": 10
+   },
+   {
+    "position": 15,
     "club": 5890,
     "joues": 12,
     "victoires": 3,
@@ -14412,18 +14435,18 @@
     "points": 10
    },
    {
-    "position": 15,
+    "position": 16,
     "club": 99,
-    "joues": 11,
+    "joues": 12,
     "victoires": 2,
     "nuls": 3,
-    "defaites": 6,
+    "defaites": 7,
     "buts_pour": 17,
-    "buts_contre": 25,
+    "buts_contre": 28,
     "points": 9
    },
    {
-    "position": 16,
+    "position": 17,
     "club": 112,
     "joues": 12,
     "victoires": 2,
@@ -14434,7 +14457,7 @@
     "points": 8
    },
    {
-    "position": 17,
+    "position": 18,
     "club": 471,
     "joues": 12,
     "victoires": 2,
@@ -14443,17 +14466,6 @@
     "buts_pour": 16,
     "buts_contre": 31,
     "points": 8
-   },
-   {
-    "position": 18,
-    "club": 5911,
-    "joues": 11,
-    "victoires": 2,
-    "nuls": 1,
-    "defaites": 8,
-    "buts_pour": 17,
-    "buts_contre": 25,
-    "points": 7
    },
    {
     "position": 19,
@@ -18268,6 +18280,12 @@
       "poste": "Offence",
       "naissance": "2005-11-21",
       "nationalite": "Spain"
+     },
+     {
+      "nom": "Cristian Mazzara",
+      "poste": null,
+      "naissance": "2007-01-19",
+      "nationalite": "Italy"
      },
      {
       "nom": "Kevin Fustini",
