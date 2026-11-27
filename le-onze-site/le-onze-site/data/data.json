@@ -8912,6 +8912,12 @@
       "poste": "Offence",
       "naissance": "2005-02-09",
       "nationalite": "Ivory Coast"
+     },
+     {
+      "nom": "Joe Cowan",
+      "poste": null,
+      "naissance": "2008-09-12",
+      "nationalite": "England"
      }
     ]
    },
@@ -9974,6 +9980,12 @@
       "poste": "Offence",
       "naissance": "2007-03-22",
       "nationalite": "USA"
+     },
+     {
+      "nom": "Charlie Walker-Smith",
+      "poste": null,
+      "naissance": "2007-09-19",
+      "nationalite": "Wales"
      }
     ]
    },
